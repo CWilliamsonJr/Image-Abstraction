@@ -26,5 +26,5 @@ Example Output:
   Thumbnail: "http://ts2.mm.bing.net/th?id=OIP.Mc082e2d4a54529995c2aa0dd50eb98ecH0&pid=15.1"  
 },
 ```
-For recent searches:(only the last 20 searches are stored)    
+**For recent searches:(only the last 20 searches are stored)**    
 `[yoursite]/ImageSearch/imgsearch.php/recentsearches`
