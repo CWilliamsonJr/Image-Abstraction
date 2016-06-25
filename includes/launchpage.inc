@@ -16,6 +16,7 @@ $html = <<<HTML
   <div class='h3'>Example Usage: </div>
   <div><code>$site/ImageSearch/imgsearch.php/[img you want to search]?offset=[number of returned results]</code></div>
   <div><code>$site/ImageSearch/imgsearch.php/cars?offset=10</code></div> <br/>
+  <div><strong>Note: Max returned results is 50</strong>
   <div> </div>
   <div class='h3'>Example Output: </div>
   <code>

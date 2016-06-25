@@ -10,7 +10,7 @@ try{
   $count = count($pastsearches['term']);
   for($i = 0; $i < $count; $i++){
     $prevSearches[] = array(
-      'term' => $pastsearches['term'][$i],
+      'term' => urldecode($pastsearches['term'][$i]),
       'when' => $pastsearches['when'][$i]
     );
   }
