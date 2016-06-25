@@ -19,7 +19,7 @@
         require './includes/recentsearch.inc';
     } else{
 
-      $filename = 'searches.txt';
+      $filename = './searches.txt';
       define('MAX_RESULTS', 50); // Max possible results set to a constant
       $search = urlencode(basename($_SERVER['PATH_INFO'])); // gets the serch term from the URL
       $url = 'https://api.datamarket.azure.com/Bing/Search/v1/Image?$format=json&Query=%27'.$search.'%27'; // sets the url for the search
@@ -72,7 +72,7 @@
       ];
 
       if(is_readable($filename)){ // detects if file is readiable.
-          AppendPastSearches($filecontents);
+          AppendPastSearches($filecontents);          
         }else{
           $handle = fopen($filename, "a"); // if file doesn't exist create the file;
           fclose($handle);
